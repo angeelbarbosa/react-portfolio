@@ -5,6 +5,9 @@ import Image from "next/image"
 import design from "../public/design.png"
 import code from "../public/code.png"
 import consulting from "../public/consulting.png"
+import web1 from "../public/web1.png"
+import web3 from "../public/web3.png"
+import web5 from "../public/web5.png"
 
 export default function Home() {
   return (
@@ -15,7 +18,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-white px-10">
+      <main className="bg-white px-10 md:px-20 lg:px-40">
         <section className=" min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons">Angel Barbosa</h1>
@@ -34,11 +37,13 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium">
+            <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
               Angel Barbosa
             </h2>
-            <h3 className="text-2xl py-2">Developer and designer.</h3>
-            <p className="text-md py-5 leading-8 text-gray-800">
+            <h3 className="text-2xl py-2 md:text-3xl">
+              Developer and designer.
+            </h3>
+            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. A fugiat
               soluta corporis quod quisquam quo sunt earum reiciendis rem
               explicabo eaque consequatur quasi vitae, perferendis temporibus,
@@ -67,7 +72,7 @@ export default function Home() {
               saepe rem magn
             </p>
           </div>
-          <div>
+          <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10">
               <Image alt="" src={design} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2">nice designs</h3>
@@ -107,7 +112,48 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div></div>
+          <div>
+            <h3 className="text-3xl py-1">Portfolio</h3>
+            <p className="text-md py-2 leading-8 text-gray-800">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+              necessitatibus. Inventore voluptatem impedit officiis alias nam,
+              saepe rem magni <span className="text-teal-500">word</span>{" "}
+              lksdlkdjfkldjfkld <span className="text-teal-500">word</span>{" "}
+              jsndj
+            </p>
+          </div>
+          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+            <div className="basis-1/3 flex-1">
+              <Image
+                alt=""
+                src={web1}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+              />
+            </div>
+            <div className="basis-1/3 flex-1">
+              <Image
+                alt=""
+                src={web5}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+              />
+            </div>
+            <div className="basis-1/3 flex-1">
+              <Image
+                alt=""
+                src={web3}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+              />
+            </div>
+          </div>
         </section>
       </main>
     </div>
