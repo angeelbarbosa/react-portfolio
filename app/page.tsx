@@ -47,8 +47,8 @@ export default function Home() {
           </nav>
         </header>
 
-        <section className="flex flex-col lg:flex-row min-h-screen">
-          <div className="text-center p-10">
+        <section className="flex flex-col lg:flex-row min-h-screen items-center">
+          <div className="text-center p-10 ml-auto mr-auto">
             <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-10xl dark:text-teal-400">
               Angel Barbosa
             </h2>
@@ -73,7 +73,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 mb-20 overflow-hidden md:h-96 md:w-96">
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 mb-20 overflow-hidden md:h-96 md:w-96 ">
             <Image
               alt="main picture of myself"
               src={myself}
