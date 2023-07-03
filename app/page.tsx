@@ -1,6 +1,7 @@
 "use client"
 import Head from "next/head"
 import { BsFillMoonStarsFill } from "react-icons/bs"
+import { BsDownload } from "react-icons/bs"
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai"
 import Image from "next/image"
 import myself from "../public/mePic.png"
@@ -47,7 +48,7 @@ export default function Home() {
           </nav>
         </header>
 
-        <section className="flex flex-col lg:flex-row min-h-screen items-center">
+        <section className="flex flex-col lg:flex-row  min-h-screen items-center">
           <div className="text-center p-10 ml-auto mr-auto">
             <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-10xl dark:text-teal-400">
               Angel Barbosa
@@ -100,7 +101,13 @@ export default function Home() {
           </div>
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
-              <Image alt="" src={design} width={100} height={100} />
+              <Image
+                className="w-full h-50"
+                alt=""
+                src={ticTac}
+                width={100}
+                height={100}
+              />
               <h3 className="text-lg font-medium pt-8 pb-2">nice designs</h3>
               <p className="py-2">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
@@ -112,7 +119,13 @@ export default function Home() {
               <p className="text-gray-800 py-1">Illustrator</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
-              <Image alt="" src={code} width={100} height={100} />
+              <Image
+                className="w-full h-40"
+                alt=""
+                src={code}
+                width={100}
+                height={100}
+              />
               <h3 className="text-lg font-medium pt-8 pb-2">nice designs</h3>
               <p className="py-2">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
@@ -124,14 +137,22 @@ export default function Home() {
               <p className="text-gray-800 py-1">Illustrator</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
-              <Image alt="" src={consulting} width={100} height={100} />
+              <Image
+                className="w-full"
+                alt=""
+                src={consulting}
+                width={100}
+                height={100}
+              />
               <h3 className="text-lg font-medium pt-8 pb-2">nice designs</h3>
               <p className="py-2">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
                 obcaecati
               </p>
               <h4 className="py-4 text-teal-600">Design tools I use</h4>
-              <p className="text-gray-800 py-1">Figma</p>
+              <button className="text-white py-1 bg-gradient-to-r from-cyan-500 to-teal-500">
+                Figma
+              </button>
               <p className="text-gray-800 py-1">Photoshop</p>
               <p className="text-gray-800 py-1">Illustrator</p>
             </div>
@@ -149,22 +170,23 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1">
-              <a
-                target={"_blank"}
-                href="https://angeelbarbosa.github.io/tic-tac-toe/"
-              >
-                <Image
-                  alt=""
-                  src={ticTac}
-                  className="rounded-lg object-cover"
-                  width={"100%"}
-                  height={"100%"}
-                  layout="responsive"
-                />
-              </a>
+            <div className="relative basis-1/3 flex-1">
+              <Image
+                className="w-full rounded-lg object-cover"
+                alt=""
+                src={ticTac}
+                // width={"100%"}
+                // height={"100%"}
+                layout="responsive"
+              />
+              <button className="absolute  bottom-0 bg-gradient-to-r  from-cyan-500 to-teal-500 text-white p-2 rounded hover:bg-blue-800 m-2">
+                LIVE VIEW
+              </button>
+              <button className="absolute  bottom-0 right-0 bg-gradient-to-r  from-cyan-500 to-teal-500 text-white p-2 rounded hover:bg-blue-800 m-2">
+                CODE
+              </button>
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className=" bg basis-1/3 flex-1">
               <a
                 target={"_blank"}
                 href="https://angeelbarbosa.github.io/my-own-spotify-player/"
@@ -173,8 +195,8 @@ export default function Home() {
                   alt=""
                   src={spotify}
                   className="rounded-lg object-cover"
-                  width={"100%"}
-                  height={"100%"}
+                  // width={"100%"}
+                  // height={"100%"}
                   layout="responsive"
                 />
               </a>
@@ -184,8 +206,8 @@ export default function Home() {
                 alt=""
                 src={web1}
                 className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
+                // width={"100%"}
+                // height={"100%"}
                 layout="responsive"
               />
             </div>
