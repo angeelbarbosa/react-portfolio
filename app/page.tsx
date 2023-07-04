@@ -23,10 +23,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-white px-10 md:px-20 lg:px-100 dark:bg-gradient-to-b from-gray-900 to-gray-400">
+      <main className="bg-white px-10 md:px-20 lg:px-100 dark:bg-gradient-to-r from-[#111827] to-[#1f2937]">
         <header>
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons dark:text-gray-400">
+            <h1 className="text-xl font-burtons dark:text-purple-400">
               Angel Barbosa
             </h1>
             <ul className="flex items-center dark:text-gray-400">
@@ -37,20 +37,22 @@ export default function Home() {
                 />
               </li>
               <li>
-                <a
-                  className="bg-gradient-to-r  from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-                  href="#"
-                >
-                  Resume
-                </a>
+                <button>
+                  <a
+                    className="bg-gradient-to-r  from-purple-800 to-purple-600 text-white px-4 py-2 rounded-md ml-8"
+                    href="#"
+                  >
+                    Resume
+                  </a>
+                </button>
               </li>
             </ul>
           </nav>
         </header>
 
-        <section className="flex flex-col lg:flex-row  min-h-screen items-center">
+        <section className="flex flex-col lg:flex-row  min-h-screen items-center -mt-6">
           <div className="text-center p-10 ml-auto mr-auto">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-10xl dark:text-teal-400">
+            <h2 className="text-5xl py-2 text-purple-800 font-medium md:text-10xl dark:text-purple-700">
               Angel Barbosa
             </h2>
             <h3 className="text-2xl py-2 md:text-3xl dark:text-white ">
@@ -74,7 +76,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 mb-20 overflow-hidden md:h-96 md:w-96 ">
+          <div className="relative mx-auto bg-gradient-to-b from-purple-400 rounded-full w-80 h-80 mt-20 mb-20 overflow-hidden md:h-96 md:w-96 ">
             <Image
               alt="main picture of myself"
               src={myself}
@@ -100,7 +102,7 @@ export default function Home() {
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gradient-to-r  from-[#3b0764] to-[#1e293b] dark:text-zinc-400">
               <Image
                 className="w-full h-50"
                 alt=""
@@ -108,15 +110,26 @@ export default function Home() {
                 width={100}
                 height={100}
               />
-              <h3 className="text-lg font-medium pt-8 pb-2">nice designs</h3>
+              <h3 className="text-lg font-large pt-8 pb-2">TIC - TAC - TOE</h3>
               <p className="py-2">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
                 obcaecati
               </p>
-              <h4 className="py-4 text-teal-600">Design tools I use</h4>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
+
+              <div className=" flex gap-10 justify-center">
+                <button className="  h-12 px-6 m-2 text-lg text-indigo-100 transition-colors duration-150 bg-gradient-to-r  from-purple-800 to-purple-600 rounded-md focus:shadow-outline hover:bg-indigo-800">
+                  LIVE VIEW
+                </button>
+                <button className=" bg-gradient-to-r  from-purple-800 to-purple-600 text-white px-4 py-2 rounded-md ml-8">
+                  VIEW CODE
+                </button>
+              </div>
+              <h4 className="py-4 text-teal-600 dark:text-white">
+                Design tools I use
+              </h4>
+              <p className="text-gray-800 py-1 dark:">Figma</p>
+              <p className="text-gray-800 py-1 ">Photoshop</p>
+              <p className="text-gray-800 py-1 ">Illustrator</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <Image
