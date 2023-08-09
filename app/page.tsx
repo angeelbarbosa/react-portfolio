@@ -106,8 +106,8 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="lg:flex gap-10 ">
-            <div className="hover:-translate-y-1 hover:scale-110 duration-300 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gradient-to-r  from-[#3b0764] to-[#1e293b] dark:text-zinc-400">
+          <div className=" lg:flex gap-10 ">
+            <div className=" min-w-0	 hover:-translate-y-1 hover:scale-110 duration-300 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gradient-to-r  from-[#3b0764] to-[#1e293b] dark:text-zinc-400">
               <Image
                 className="w-full h-50"
                 alt=""
@@ -148,7 +148,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className=" hover:-translate-y-1 hover:scale-110 duration-300 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gradient-to-r  from-[#3b0764] to-[#1e293b] dark:text-zinc-400">
+            <div className=" min-w-0	 hover:-translate-y-1 hover:scale-110 duration-300 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gradient-to-r  from-[#3b0764] to-[#1e293b] dark:text-zinc-400">
               <Image
                 className="w-full h-50"
                 alt=""
@@ -190,7 +190,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="hover:-translate-y-1 hover:scale-110 duration-300 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gradient-to-r  from-[#3b0764] to-[#1e293b] dark:text-zinc-400">
+            <div className=" min-w-0	hover:-translate-y-1 hover:scale-110 duration-300 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gradient-to-r  from-[#3b0764] to-[#1e293b] dark:text-zinc-400">
               <Image
                 className="w-full h-50"
                 alt=""
