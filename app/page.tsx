@@ -112,7 +112,8 @@ export default function Home() {
                 className="w-full h-50"
                 alt=""
                 src={ticTac}
-
+                width={1000}
+                height={1000}
               />
               <h3 className="text-lg font-large pt-8 pb-2">TIC - TAC - TOE</h3>
               <p className="py-2">
@@ -153,7 +154,8 @@ export default function Home() {
                 className="w-full h-50"
                 alt=""
                 src={weatherApp}
-
+    width={1000}
+                height={1000}
 
               />
               <h3 className="text-lg font-large pt-8 pb-2">WEATHER APP</h3>
@@ -195,7 +197,8 @@ export default function Home() {
                 className="w-full h-50"
                 alt=""
                 src={chimeCandy}
-
+                width={1000}
+                height={1000}
               />
               <h3 className="text-lg font-large pt-8 pb-2">CHIME CANDY</h3>
               <p className="py-2">
