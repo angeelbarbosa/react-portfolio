@@ -103,7 +103,6 @@ export default function Home() {
               /> */}
           </div>
   <section>
-
           <h3 className="text-3xl text-right py-1 dark:text-white">Experience</h3>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
 
