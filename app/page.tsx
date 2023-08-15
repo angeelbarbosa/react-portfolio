@@ -4,13 +4,12 @@ import { BsFillMoonStarsFill } from "react-icons/bs"
 
 import { AiFillLinkedin, AiFillGithub, AiOutlineDownload } from "react-icons/ai"
 import Image from "next/image"
-import myself from "../public/mePic.png"
-
-import web1 from "../public/web1.png"
+import Myself from "../public/mePic.png"
 import ticTac from "../public/tic_tac_toe.png"
+import Acc from "../public/acc_logor.png"
 import weatherApp from "../public/weather-app.png"
 import chimeCandy from "../public/chime-candy.png"
-import spotify from "../public/spotify_project.png"
+
 import { useState } from "react"
 
 export default function Home() {
@@ -82,7 +81,7 @@ export default function Home() {
           <div className="hover:-translate-y-1 hover:scale-110 duration-300 relative mx-auto bg-gradient-to-b from-purple-400 rounded-full w-80 h-80 mt-20 mb-20 overflow-hidden md:h-96 md:w-96 ">
             <Image
               alt="main picture of myself"
-              src={myself}
+              src={Myself}
               layout="fill"
               objectFit="cover"
             />
@@ -90,30 +89,43 @@ export default function Home() {
         </section>
 
         <section>
-          <div>
-            <h3 className="text-3xl py-1">insert text here later</h3>
+        <h3 className="text-3xl  py-1 dark:text-white">Education</h3>
+          <div className="flex mb-10" >
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
-              necessitatibus. Inventore voluptatem impedit officiis alias nam,
-              saepe rem magni <span className="text-teal-500">word</span>{" "}
-              lksdlkdjfkldjfkld <span className="text-teal-500">word</span>{" "}
-              jsndj
+              Achieved <span className="text-purple-500 font-bold">Associates Degree in Computer Programming</span>{" "}
+              from Austin Community College, specializing in <span className="text-purple-500 font-bold">web development</span>. <br /> The curriculum included key courses such as Programming Fundamentals I & II, Web Design Tools focusing on HTML & CSS, Beginning of Web Programming covering JavaScript essentials, and Intermediate Web Programming emphasizing the integration of HTML, CSS, and JavaScript for dynamic and engaging web solutions.
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
-              necessitatibus. Inventore voluptatem impedit officiis alias nam,
-              saepe rem magn
-            </p>
+            {/* <Image
+                className="block"
+                alt=""
+                src={Acc}
+
+              /> */}
           </div>
+  <section>
+
+          <h3 className="text-3xl text-right py-1 dark:text-white">Experience</h3>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+            <div className="flex-col hover:-translate-y-1 hover:scale-105 duration-300  shadow-lg p-10 rounded-xl my-10 bg-purple-800 text-white dark:bg-gradient-to-r from-[#3b0764] to-[#1e293b] dark:text-zinc-400">
+              <h3 className="" >Marco Polo (Freelance) - Queretaro, Mexico </h3>
+              <div className="flex justify-between  ">
+              <p className="font-thin text-sm">Front-end Web Developer</p>
+              <p className=" text-sm">Mar 2021 – Dec 2022</p>
+              </div>
+              <p className="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil saepe modi maxime in voluptas labore dolorum repellat cumque ipsum dolorem beatae nesciunt, perferendis reiciendis sed nobis perspiciatis officia blanditiis rem.</p>
+            </div>
+          </div>
+        </section>
 
           <div className=" lg:flex gap-10 ">
             <div className=" min-w-0	 hover:-translate-y-1 hover:scale-110 duration-300 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gradient-to-r  from-[#3b0764] to-[#1e293b] dark:text-zinc-400">
               <Image
-                className="w-full h-50"
+                className="w-full  "
                 alt=""
                 src={ticTac}
-                width={1000}
-                height={1000}
+                // width={1000}
+                // height={1000}
               />
               <h3 className="text-lg font-large pt-8 pb-2">TIC - TAC - TOE</h3>
               <p className="py-2">
@@ -135,7 +147,7 @@ export default function Home() {
                 </button>
               </div>
               <h4 className="py-4 text-teal-600 dark:text-white">
-                Design tools I use
+               Skills used
               </h4>
               <div className="flex justify-center gap-10">
                 <p className="text-gray-800 py-1 dark:text-gray-400 ">Figma</p>
@@ -151,11 +163,11 @@ export default function Home() {
             </div>
             <div className=" min-w-0	 hover:-translate-y-1 hover:scale-110 duration-300 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gradient-to-r  from-[#3b0764] to-[#1e293b] dark:text-zinc-400">
               <Image
-                className="w-full h-50"
+                className="w-full  "
                 alt=""
                 src={weatherApp}
-    width={1000}
-                height={1000}
+    // width={1000}
+    //             height={1000}
 
               />
               <h3 className="text-lg font-large pt-8 pb-2">WEATHER APP</h3>
@@ -178,7 +190,7 @@ export default function Home() {
                 </button>
               </div>
               <h4 className="py-4 text-teal-600 dark:text-white">
-                Design tools I use
+               Skills used
               </h4>
               <div className="flex justify-center gap-10">
                 <p className="text-gray-800 py-1 dark:text-gray-400">Figma</p>
@@ -194,11 +206,11 @@ export default function Home() {
             </div>
             <div className=" min-w-0	hover:-translate-y-1 hover:scale-110 duration-300 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gradient-to-r  from-[#3b0764] to-[#1e293b] dark:text-zinc-400">
               <Image
-                className="w-full h-50"
+                className="w-full "
                 alt=""
                 src={chimeCandy}
-                width={1000}
-                height={1000}
+                // width={1000}
+                // height={100}
               />
               <h3 className="text-lg font-large pt-8 pb-2">CHIME CANDY</h3>
               <p className="py-2">
@@ -218,7 +230,7 @@ export default function Home() {
 
               </div>
               <h4 className="py-4 text-teal-600 dark:text-white">
-                Design tools I use
+               Skills used
               </h4>
               <div className="flex justify-center gap-10">
                 <p className="text-gray-800 py-1 dark:text-gray-400">Figma</p>
