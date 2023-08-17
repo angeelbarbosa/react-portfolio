@@ -78,46 +78,55 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="hover:-translate-y-1 hover:scale-110 duration-300 relative mx-auto bg-gradient-to-b from-purple-400 rounded-full w-80 h-80 mt-20 mb-20 overflow-hidden md:h-96 md:w-96 ">
+          <div className="hover:-translate-y-1 hover:scale-110 duration-300 relative mx-auto bg-gradient-to-b from-purple-500 rounded-full w-80 h-80 mt-20 mb-20 overflow-hidden md:h-96 md:w-96 ">
             <Image
               alt="main picture of myself"
               src={Myself}
-              layout="fill"
-              objectFit="cover"
             />
           </div>
         </section>
 
-        <section>
+          <section>
+
         <h3 className="text-3xl  py-1 dark:text-white">Education</h3>
           <div className="flex mb-10" >
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Achieved <span className="text-purple-500 font-bold">Associates Degree in Computer Programming</span>{" "}
               from Austin Community College, specializing in <span className="text-purple-500 font-bold">web development</span>. <br /> The curriculum included key courses such as Programming Fundamentals I & II, Web Design Tools focusing on HTML & CSS, Beginning of Web Programming covering JavaScript essentials, and Intermediate Web Programming emphasizing the integration of HTML, CSS, and JavaScript for dynamic and engaging web solutions.
             </p>
-            {/* <Image
-                className="block"
-                alt=""
-                src={Acc}
-
-              /> */}
           </div>
+          </section>
   <section>
+
+
+          {/* Experience */}
           <h3 className="text-3xl text-right py-1 dark:text-white">Experience</h3>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
 
             <div className="flex-col hover:-translate-y-1 hover:scale-105 duration-300  shadow-lg p-10 rounded-xl my-10 bg-purple-800 text-white dark:bg-gradient-to-r from-[#3b0764] to-[#1e293b] dark:text-zinc-400">
-              <h3 className="" >Marco Polo (Freelance) - Queretaro, Mexico </h3>
-              <div className="flex justify-between  ">
+              <h3 className="text-gray-300" >Turisticos Marco Polo (Freelance) - Queretaro, Mexico </h3>
+              <div className="flex justify-between ">
               <p className="font-thin text-sm">Front-end Web Developer</p>
               <p className=" text-sm">Mar 2021 – Dec 2022</p>
               </div>
-              <p className="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil saepe modi maxime in voluptas labore dolorum repellat cumque ipsum dolorem beatae nesciunt, perferendis reiciendis sed nobis perspiciatis officia blanditiis rem.</p>
+              <p className="mt-4">Took part of the front-end team to develop an Enterprise Resource Planning system. <br /> In this capacity, I addressed bugs, performed strategic code refactoring, and integrated industry best practices. <br /> This role served as a valuable opportunity for me to immerse myself in learning React, an experience that significantly expanded my skill set and proficiency.</p>
+
+            </div>
+            <div className="flex-col hover:-translate-y-1 hover:scale-105 duration-300  shadow-lg p-10 rounded-xl my-10 bg-purple-800 text-white dark:bg-gradient-to-r from-[#3b0764] to-[#1e293b] dark:text-zinc-400">
+              <h3 className="text-gray-300" >Hurley Piano (Internship) – Austin, Texas </h3>
+              <div className="flex justify-between ">
+              <p className="font-thin text-sm">Web Designer  </p>
+              <p className=" text-sm">Jan 2022 – May 2022</p>
+              </div>
+              <p className="mt-4">I took the lead role in the design of "Chime Candy", a music game  that enhances music education at a young age crafted for children, particularly those with special needs. <br /> I managed all in-game and web page designs to enhance user experience. <br /> <br /> Chime Candy has since been successfully published and is readily playable. It stands as an indispensable asset within the activities of the Williams Community School in Austin, TX, where it actively contributes to the musical development of young children.</p>
+
             </div>
           </div>
         </section>
+        <section>
+          <h3 className="text-3xl text-left py-1 dark:text-white">Projects</h3>
 
-          <div className=" lg:flex gap-10 ">
+          <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             <div className=" min-w-0	 hover:-translate-y-1 hover:scale-110 duration-300 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gradient-to-r  from-[#3b0764] to-[#1e293b] dark:text-zinc-400">
               <Image
                 className="w-full  "
@@ -162,14 +171,11 @@ export default function Home() {
             </div>
             <div className=" min-w-0	 hover:-translate-y-1 hover:scale-110 duration-300 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gradient-to-r  from-[#3b0764] to-[#1e293b] dark:text-zinc-400">
               <Image
-                className="w-full  "
+                className="w-full"
                 alt=""
                 src={weatherApp}
-    // width={1000}
-    //             height={1000}
-
               />
-              <h3 className="text-lg font-large pt-8 pb-2">WEATHER APP</h3>
+              <h3 className="text-lg xl:text-md font-large pt-8 pb-2">WEATHER APP</h3>
               <p className="py-2">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
                 obcaecati
@@ -243,8 +249,50 @@ export default function Home() {
                 </p>
               </div>
             </div>
+            <div className=" min-w-0	hover:-translate-y-1 hover:scale-110 duration-300 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gradient-to-r  from-[#3b0764] to-[#1e293b] dark:text-zinc-400">
+              <Image
+                className="w-full "
+                alt=""
+                src={chimeCandy}
+                // width={1000}
+                // height={100}
+              />
+              <h3 className="text-lg font-large pt-8 pb-2">CHIME CANDY</h3>
+              <p className="py-2">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                obcaecati
+              </p>
+
+              <div className=" flex gap-10 justify-center">
+                 <a
+                  target={"_blank"}
+                  href="https://richard-hurley.itch.io/chimecandy"
+                >
+                  <button className=" hover:-translate-y-1 hover:scale-110 duration-300 h-12 px-6 m-2 text-lg text-indigo-100  bg-gradient-to-r from-purple-800 to-purple-600 rounded-md hover:from-purple-500 hover:to-purple-400">
+                    LIVE VIEW
+                  </button>
+                </a>
+
+              </div>
+              <h4 className="py-4 text-teal-600 dark:text-white">
+               Skills used
+              </h4>
+              <div className="flex justify-center gap-10">
+                <p className="text-gray-800 py-1 dark:text-gray-400">Figma</p>
+                <p className="text-gray-800 py-1 dark:text-gray-400">Figma</p>
+                <p className="text-gray-800 py-1 dark:text-gray-400">Figma</p>
+                <p className="text-gray-800 py-1 dark:text-gray-400">
+                  Photoshop
+                </p>
+                <p className="text-gray-800 py-1 dark:text-gray-400">
+                  Illustrator
+                </p>
+              </div>
+            </div>
+
           </div>
         </section>
+
         <section>
           <div>
             <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
